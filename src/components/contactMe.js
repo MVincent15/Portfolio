@@ -22,22 +22,33 @@ export default function Contact() {
     }
   };
 
+  const handleInputBlur = (e) => {
+    const { target } = e;
+    const inputType = target.name;
+
+    if (inputType === "userName" && !userName.trim()) {
+      setErrorMessage("Name is required");
+    } else if (inputType === "email" && !validateEmail(email)) {
+      setErrorMessage("Email is invalid");
+    } else if (inputType === "message" && !message.trim()) {
+      setErrorMessage("Message is required");
+    } else {
+      setErrorMessage("");
+    }
+  };
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    if (!validateEmail(email) || !userName) {
-      setErrorMessage("Email or Name is invalid");
-      return;
-    }
-
-    if (!message) {
-      setErrorMessage("Message is required.");
+    if (!validateEmail(email) || !userName.trim() || !message.trim()) {
+      setErrorMessage("Please fill in all required fields correctly");
       return;
     }
 
     setUserName("");
     setMessage("");
     setEmail("");
+    setErrorMessage("");
   };
 
   return (
@@ -56,10 +67,7 @@ export default function Contact() {
             Keller, TX <br />
             Cell: <p>817-913-0562</p>
             <br />
-            Email:{" "}
-            <p>
-              vincent.megan23@gmail.com
-            </p>
+            Email: <p>vincent.megan23@gmail.com</p>
           </address>
         </div>
 
@@ -71,6 +79,7 @@ export default function Contact() {
               value={userName}
               name="userName"
               onChange={handleInputChange}
+              onBlur={handleInputBlur}
               type="text"
               id="contact-name"
               placeholder="Your Name"
@@ -81,6 +90,7 @@ export default function Contact() {
               value={email}
               name="email"
               onChange={handleInputChange}
+              onBlur={handleInputBlur}
               type="email"
               id="contact-email"
               placeholder="Your Email"
@@ -91,19 +101,21 @@ export default function Contact() {
               value={message}
               name="message"
               onChange={handleInputChange}
+              onBlur={handleInputBlur}
               id="contact-message"
               placeholder="Your Message"
             />
+
             <button type="button" onClick={handleFormSubmit}>
               Submit
             </button>
           </form>
+          {errorMessage && (
+            <div>
+              <p className="error-text">{errorMessage}</p>
+            </div>
+          )}
         </div>
-        {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
-          </div>
-        )}
       </div>
     </section>
   );
