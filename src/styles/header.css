@@ -1,0 +1,44 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  color: #f6d8ac;
+  border-radius: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #8ec3eb;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  background-color: #2a6592;
+  padding: 20px;
+}
+
+.portfolio-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #db9833;
+}

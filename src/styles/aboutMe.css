@@ -1,0 +1,21 @@
+.profile-image {
+    width: 250px; 
+    height: 250px; 
+    object-fit: cover;
+    border-radius: 50%;
+   
+  }
+  
+  .about-heading {
+    font-size: 40px;
+    font-weight: bold;
+    color:#db9833;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+  }
+  
+  .about-paragraph {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
