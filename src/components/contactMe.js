@@ -58,7 +58,7 @@ export default function Contact() {
   return (
     <section id="reach-out" className="contact">
       <div className="flex-row">
-        <h2 className="section-title secondary-border">Contact Me!</h2>
+        <h2 className="section-titles secondary-border">Contact Me!</h2>
       </div>
 
       <div className="contact-info">

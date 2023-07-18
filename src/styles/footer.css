@@ -1,5 +1,13 @@
+:root {
+    --cool-gray: #7D84B2;
+    --vista-blue: #8E9DCC;
+    --lavender: #d9dbf1;
+    --ivory: #f9f9ed;
+    --light-green: #DBF4A7;
+}
+
 footer {
-    background-color: #2a6592;
+    background-color: var(--light-green);
     padding: 20px;
     text-align: center;
 }
@@ -7,7 +15,7 @@ footer {
 footer h2 {
     font-size: 24px;
     font-weight: bold;
-    color: #fff;
+    color: var(--cool-gray);
 }
 
 footer p {
@@ -28,9 +36,9 @@ footer ul li {
 
 footer ul li.logo {
     font-size: 24px;
-    color: #fff;
+    color: var(--cool-gray);
 }
 
 footer ul li.logo:hover {
-    color: #db9833;
+    color: var(--lavender);
 }

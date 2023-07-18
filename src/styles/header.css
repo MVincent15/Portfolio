@@ -1,3 +1,11 @@
+:root {
+  --cool-gray: #7D84B2;
+  --vista-blue: #8E9DCC;
+  --lavender: #d9dbf1;
+  --ivory:#f9f9ed;
+  --light-green: #DBF4A7;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -14,7 +22,7 @@ header nav ul {
 
 header nav ul li a {
   padding: 10px 15px;
-  color: #f6d8ac;
+  color: var(--light-green);
   border-radius: 15px;
   font-weight: bold;
   text-decoration: none;
@@ -22,7 +30,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color: #8ec3eb;
+  color: var(--ivory);
 }
 
 .headerContainer {
@@ -33,12 +41,12 @@ header nav ul li a:hover {
 }
 
 header {
-  background-color: #2a6592;
+  background-color: var(--cool-gray);
   padding: 20px;
 }
 
 .portfolio-title {
   font-size: 48px;
   font-weight: bold;
-  color: #db9833;
+  color: var(--lavender);
 }

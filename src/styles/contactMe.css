@@ -1,5 +1,13 @@
+:root {
+    --cool-gray: #7D84B2;
+    --vista-blue: #8E9DCC;
+    --lavender: #d9dbf1;
+    --ivory: #f9f9ed;
+    --light-green: #DBF4A7;
+  }
+
 .contact {
-    background-color: #f8f8f8;
+    background-color: white;
     padding: 20px;
 }
 
@@ -9,12 +17,12 @@
     justify-content: center;
 }
 
-.section-title {
+.section-titles {
     font-size: 32px;
     font-weight: bold;
-    color: #db9833;
+    color: var(--cool-gray);
     margin-bottom: 20px;
-    border-bottom: 2px solid #7e9a9a;
+    border-bottom: 2px solid darkblue;
     padding-bottom: 10px;
 }
 
@@ -27,7 +35,7 @@
 
 .contact-info div {
     padding: 20px;
-    background-color: #fff;
+    background-color: var(--cool-gray);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -35,47 +43,28 @@
 .contact-info h3 {
     font-size: 24px;
     font-weight: bold;
-    color: #2a6592;
+    color: var(--light-green);
 }
 
 .contact-info p {
     margin-top: 10px;
-    color: #2a6592;
+    color: var(--lavender);
 }
 
 .contact-info address {
     margin-top: 20px;
-    color: #2a6592;
-}
-
-.contact-info a {
-    color: #2a6592;
-    text-decoration: none;
+    color: var(--lavender);
 }
 
 .contact-info strong {
     font-weight: bold;
-    color: #2a6592;
-}
-
-.contact-form {
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form h3 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #2a6592;
-    margin-bottom: 20px;
+    color: darkblue;
 }
 
 .form label {
     display: block;
     font-weight: bold;
-    color: #2a6592;
+    color: darkblue;
     margin-bottom: 10px;
 }
 
@@ -84,13 +73,13 @@
     width: 100%;
     padding: 10px;
     border-radius: 4px;
-    border: 1px solid #2a6592;
+    border: 1px solid darkblue;
     margin-bottom: 20px;
 }
 
 .form button {
-    background-color: #db9833;
-    color: #fff;
+    background-color: var(--light-green);
+    color: var(--vista-blue);
     border: none;
     border-radius: 4px;
     padding: 10px 20px;
