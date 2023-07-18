@@ -7,6 +7,7 @@ export default function Contact() {
   const [userName, setUserName] = useState("");
   const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const [emailError, setEmailError] = useState("");
 
   const handleInputChange = (e) => {
     const { target } = e;
@@ -15,6 +16,7 @@ export default function Contact() {
 
     if (inputType === "email") {
       setEmail(inputValue);
+      setEmailError("");
     } else if (inputType === "userName") {
       setUserName(inputValue);
     } else {
@@ -29,11 +31,12 @@ export default function Contact() {
     if (inputType === "userName" && !userName.trim()) {
       setErrorMessage("Name is required");
     } else if (inputType === "email" && !validateEmail(email)) {
-      setErrorMessage("Email is invalid");
+      setEmailError("Invalid email");
     } else if (inputType === "message" && !message.trim()) {
       setErrorMessage("Message is required");
     } else {
       setErrorMessage("");
+      setEmailError("");
     }
   };
 
@@ -49,6 +52,7 @@ export default function Contact() {
     setMessage("");
     setEmail("");
     setErrorMessage("");
+    setEmailError("");
   };
 
   return (
@@ -95,6 +99,11 @@ export default function Contact() {
               id="contact-email"
               placeholder="Your Email"
             />
+            {emailError && (
+              <div>
+                <p className="error-text">{emailError}</p>
+              </div>
+            )}
 
             <label htmlFor="contact-message">Message</label>
             <textarea
