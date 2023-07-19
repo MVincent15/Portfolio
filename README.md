@@ -19,6 +19,8 @@ Welcome to Megan Vincents Portfolio! Here you can find information about me, way
   ## Usage
   [Click here for URL to live application]()
   
+<img width="837" alt="Screenshot 2023-07-18 at 6 24 58 PM" src="https://github.com/MVincent15/Portfolio/assets/123343948/1b8f6ff6-2692-4e3d-97e0-ee7f5efc2d14">
+<img width="837" alt="Screenshot 2023-07-18 at 6 25 12 PM" src="https://github.com/MVincent15/Portfolio/assets/123343948/7a8c7754-0a12-44b0-a59e-cf5defb40961">
 
   ## Credits 
 Used sections from SMU gitlab as well as documentation on react.
