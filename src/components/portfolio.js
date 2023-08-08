@@ -6,8 +6,17 @@ import jateImage from "../assets/projects/JATE.png";
 import noteTaker from "../assets/projects/NoteTaker.png";
 import weatherDash from "../assets/projects/weatherDash.png";
 import dailyPlanner from "../assets/projects/dailyPlanner.png";
+import memoir from '../assets/projects/MindfullnessMemoir.png';
 
 const projects = [
+  {
+    title: "Mindfullness Memoir",
+    description:
+      "Mindfulnes Memoir is a mental health tracker that allows users to track their mood, journal their thoughts, and track daily tasks like physical activity, getting sunlight, etc.",
+    image: memoir,
+    siteLink: "https://morning-waters-68042-3ca90f8eed1f.herokuapp.com/",
+    repoLink: "https://github.com/MVincent15/Portfolio",
+  },
   {
     title: "Weather Dashboard",
     description:
