@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.6502e2f5.css",
+    "main.js": "/Portfolio/static/js/main.40e380b5.js",
+    "static/media/Food4Thought.png": "/Portfolio/static/media/Food4Thought.da707f3b81df324df8fd.png",
+    "static/media/DinnerAndMovie.png": "/Portfolio/static/media/DinnerAndMovie.3ed5b3e07ae4fb6b0825.png",
+    "static/media/weatherDash.png": "/Portfolio/static/media/weatherDash.6a62863801c4e0fe7f4b.png",
+    "static/media/dailyPlanner.png": "/Portfolio/static/media/dailyPlanner.3d4102ab17a4cf02c0a6.png",
+    "static/media/NoteTaker.png": "/Portfolio/static/media/NoteTaker.c21051dc1c916d87b6c9.png",
+    "static/media/Vincent_Resume.pdf": "/Portfolio/static/media/Vincent_Resume.f8c4a3e715f82d4302c2.pdf",
+    "static/media/JATE.png": "/Portfolio/static/media/JATE.c7b7ce00f58b11dd18cb.png",
+    "static/media/profile.jpg": "/Portfolio/static/media/profile.98b33c5c8abdb21f0766.jpg",
+    "index.html": "/Portfolio/index.html",
+    "main.6502e2f5.css.map": "/Portfolio/static/css/main.6502e2f5.css.map",
+    "main.40e380b5.js.map": "/Portfolio/static/js/main.40e380b5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6502e2f5.css",
+    "static/js/main.40e380b5.js"
+  ]
+}
